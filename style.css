@@ -1,6 +1,8 @@
 :root {
-  --clr-bg: #d7eadb;
+  --clr-viewport-bg: #d7eadb;
+  --clr-main-bg: #fff8f0;
   --clr-title: #f4511e;
+  --clr-links: #2E7D32;
 }
 
 html {
@@ -16,25 +18,37 @@ html {
 }
 
 body {
-  background-color: var(--clr-bg);
+  background-color: var(--clr-viewport-bg);
+  line-height: 1.6;
 }
 
 li {
   list-style: none;
+  margin: 0.5em 0;
 }
 
 a {
+  color: var(--clr-links);
   text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 .container {
+  background-color: var(--clr-main-bg);
   width: 60%;
+  height: calc(100vh - 2em);
   margin: 0 auto;
   margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
   padding: 0.5em;
 }
 
 .title {
   color: var(--clr-title);
+  margin-bottom: 0.5em;
 }
