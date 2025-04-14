@@ -2,7 +2,7 @@
   --clr-viewport-bg: #d7eadb;
   --clr-main-bg: #fff8f0;
   --clr-title: #f4511e;
-  --clr-links: #2E7D32;
+  --clr-links: #2e7d32;
 }
 
 html {
@@ -22,9 +22,18 @@ body {
   line-height: 1.6;
 }
 
+img {
+  margin-top: 1em;
+}
+
 li {
   list-style: none;
   margin: 0.5em 0;
+}
+
+ul:not(.navigation),
+ol {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 a {
